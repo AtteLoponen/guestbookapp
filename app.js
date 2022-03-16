@@ -97,6 +97,6 @@ app.get('*', function (req, res) {
     res.status(404).send("Cannot find the requested page");
 });
 
-app.listen(8081, function () {
-    console.log('App listening on port 8081');
+app.listen(process.env.PORT || 3000, function () {
+    console.log('App listening on port 3000');
 });
