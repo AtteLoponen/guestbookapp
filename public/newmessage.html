@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>New message</title>
+	<link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css"
+		integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body style="margin-top:60px;margin-left:25%;margin-right: 25%;">
+
+	<div class="header">
+		<div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+			<a class="pure-menu-heading">Guestbook</a>
+
+			<ul class="pure-menu-list">
+				<li class="pure-menu-item pure-menu-selected"><a href="index.html" class="pure-menu-link">Home</a></li>
+				<li class="pure-menu-item"><a href="newmessage.html" class="pure-menu-link">New entry</a></li>
+				<li class="pure-menu-item"><a href="guestbooktable.html" class="pure-menu-link">Guestbook</a></li>
+				<li class="pure-menu-item"><a href="ajax.html" class="pure-menu-link">Ajax entry</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<h3>New entry</h3>
+
+	<form style="padding:20px;background-color: rgb(231, 231, 231);" class="border border-secondary rounded"
+		method="post" action="/newmessage">
+		
+		<div class="mb-3">
+			<label class="form-label">Username:</label>
+			<input name="username" type="text" class="form-control border border-secondary rounded" required />
+
+		</div>
+		<div class="mb-3">
+			<label class="form-label">Country:</label>
+			<input name="country" type="text" class="form-control border border-secondary rounded" required />
+
+		</div>
+		<div class="mb-3">
+			<label class="form-label">Message:</label>
+			<input name="message" type="text" class="form-control border border-secondary rounded" required />
+		</div>
+		<button type="submit" class="btn btn-primary" style="width: auto;">Submit</button>
+	</form>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
